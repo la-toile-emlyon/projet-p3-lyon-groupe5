@@ -2,3 +2,57 @@ html {
   height: 100%;
   width: 100%;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /* Accueil */
+
+  /* general */
+  --color-backgroundcolor: #f6ffff;
+  --color-texte: #036666;
+
+  /* size texte */
+  --H1-size-texte: 70px;
+  --H2-size-texte: 35px;
+
+  /* border radius */
+  --border-radius: 10px;
+
+  /* navbar */
+  --color-backgroundcolor-navbar: #98d9e0;
+  --color-texte-navbar: #f6ffff;
+
+  /* button navbar*/
+  --button-navbar-backgroundcolor: transparent;
+  --button-navbar-border-color: #f6ffff;
+  --button-navbar-color-texte: #f6ffff;
+  --button-navbar-radius: 25px;
+  --button-navbar-padding-inline: 24px;
+  --button-navbar-padding-block: 12px;
+  --button-navbar-size: 16px;
+
+  /* button */
+  --button-backgroundcolor: #036666;
+  --button-color: #f6ffff;
+  --button-radius: 25px;
+  --button-padding-inline: 24px;
+  --button-padding-block: 12px;
+  --button-size: 24px;
+
+  /* Section Solution */
+  /* img */
+  --img-width: 500px;
+  --img-height: 500px;
+  --img-radius: 20px;
+
+  /* texte */
+  --texte-taille:32px;
+  --texte-color:#001B1B;
+
+  /* Section Benefice */
+  /* a completer */
+}
