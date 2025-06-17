@@ -59,7 +59,14 @@ html {
 .card {
     img{
       width: 357px;
-
+height: 185px;
+border-radius: 10px;
     } 
-  
+  display: flex;
+    flex-direction: row;
+   gap: 19px;
+   
+   h4{
+font-family: "Nunito", sans-serif;
+   }
 };
