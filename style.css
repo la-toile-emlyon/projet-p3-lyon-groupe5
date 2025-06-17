@@ -1,6 +1,11 @@
 html {
   height: 100%;
   width: 100%;
+  background-color: #f6ffff;
+}
+
+body{
+  background-image: url(unsplash_dEATKItQazc.png);
 }
 
 * {
@@ -20,6 +25,7 @@ html {
   --H2-size-texte: 35px;
   --H3-size-texte: 20px;
   --H4-size-texte: 16px;
+  --H5-size-texte: 20px;
 
   /* border radius */
   --border-radius: 10px;
@@ -30,7 +36,7 @@ html {
 
   /* button navbar*/
   --button-navbar-backgroundcolor: transparent;
-  --button-navbar-border-color: #f6ffff;
+  --button-navbar-border-color: 1px solid #f6ffff;
   --button-navbar-color-texte: #f6ffff;
   --button-navbar-radius: 25px;
   --button-navbar-padding-inline: 24px;
@@ -43,7 +49,7 @@ html {
   --button-radus: 25px;
   --button-padding-inline: 24px;
   --button-padding-block: 12px;
-  --button-size: 24p  x;
+  --button-size: 24px;
 
   /* P2 Section Solution */
   /* img */
@@ -71,25 +77,111 @@ html {
 }
 
 h1,
-h2,
-h3,
+h2,h3,
 h4 {
   font-family: "Nunito", sans-serif;
 }
 
-
-
-
-
-
-
-#benefice{
+/* nav */
+#logo {
+  width: 170px;
+  padding: 10px;
+}
+nav {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  background-color: #98d9e0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+    color: #036666;
+    margin-right: 20px;
+    a {
+      list-style-type: none;
+      text-decoration: none;
+      color: #036666;
+    }
+  }
+  button {
+    color: var(--button-navbar-color-texte);
+    background-color: var(--button-navbar-backgroundcolor);
+    font-size: var(--button-navbar-size);
+    padding-inline: var(--button-navbar-padding-inline);
+    padding-block: var(--button-navbar-padding-block);
+    border: var(--button-navbar-border-color);
+    border-radius: var(--button-navbar-radius);
+  }
+}
+
+
+
+
+
+
+
+/* Accueil */
+
+.accueilLP {
+  margin-top: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-inline-start: 40px;
+  h1{
+    width: 70%;
+    font-size: var(--H1-size-texte);
+  }
+  p{
+    padding-block: 30px;
+    width: 50%;
+    font-size: var(--H5-size-texte);
+  }
+  button{
+width: 30%;
+
+background: var(--button-backgroundcolor);
+color: var(--button-color);
+border-radius: var(--button-radus);
+padding-inline: var(--button-padding-inline);
+padding-block: var(--button-padding-block);
+/* font-size: var(--button-size); */
+  }
+
+}
+
+.texte {
+  width: 60%;
+  display: flex;
+  row-gap: 10px;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#benefice {
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
   width: 100%;
 }
-.sectionCard{
+.sectionCard {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -99,23 +191,37 @@ h4 {
   flex-direction: column;
   width: 25%;
   font-size: 12px;
-  padding: 12px;
+  gap: 12px;
   border-radius: 20px;
-  
+  text-align: center;
+
   img {
     align-self: center;
     width: var(--benefice-img-width);
     height: var(--benefice-img-height);
     border-radius: var(--benefice-img-radius);
-    padding-bottom: 12px;
   }
   h3 {
     font-size: var(--H3-size-texte);
-        padding-bottom: 12px;
-        text-align: center;
+    color: #036666;
+    text-align: center;
   }
-  h2{
+  h2 {
     justify-self: anchor-center;
   }
+
+  p {
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    text-align: justify;
+  }
 }
-   
+
+.sectionCard {
+  gap: 23px;
+}
+
+h2 {
+  align-self: anchor-center;
+  margin-bottom: 89px;
+}
