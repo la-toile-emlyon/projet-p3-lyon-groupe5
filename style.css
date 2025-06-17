@@ -56,4 +56,10 @@ html {
   /* Section Benefice */
   /* a completer */
 }
+.card {
+    img{
+      width: 357px;
 
+    } 
+  
+};
