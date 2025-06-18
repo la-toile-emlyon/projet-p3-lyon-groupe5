@@ -22,7 +22,7 @@
     />
   </head>
 
-  <body>
+  <body id="ACCUEIL">
     <header>
       <nav>
         <img
@@ -32,16 +32,19 @@
         />
 
         <ul>
-          <li>Accueil</li>
-          <li><a href="/doc.html">Documentation</a></li>
-          <li><button>Prendre RDV</button></li>
+          <li><a href="#ACCUEIL">Accueil</a></li>
+          <li><a href="#MISSION">Mission</a></li>
+          <li><a href="#SUPPORT">Support</a></li>
+          <li><a href="#INTERET">Interet</a></li>
+          <li><a href="#AVIS">Avis</a></li>
+          <li><button><a href="/doc.html">Documentation</a></button></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <!-- Accueil -->
-      <section class="accueilLP">
+      <section class="accueilLP" >
         <h1>Mesurez l’humidité, agissez contre l’insalubrité</h1>
         <div class="texte">
           <p>
@@ -54,7 +57,7 @@
       </section>
 
       <!-- Notre Mission -->
-      <section class="missionLP">
+      <section class="missionLP" id="MISSION">
         <section class="mission">
           <h2>Notre <span>Mission</span></h2>
           <h5>
@@ -77,15 +80,7 @@
               <h4>Déploiement des capteurs</h4>
             </div>
           </div>
-
           <div>
-            <img src="photo/Reception.png" alt="Réception" />
-          </div>
-          <div>
-            <img
-              src="photo/CoordinationMairieBailleur.png"
-              alt="Coordination"
-            />
             <div class="ligneMission">
               <i class="fa-solid fa-triangle-exclamation"></i>
 
@@ -93,9 +88,13 @@
 
               <h4>Récepetion des alertes</h4>
             </div>
+            <img src="photo/Reception.png" alt="Réception" />
           </div>
-
           <div>
+            <img
+              src="photo/CoordinationMairieBailleur.png"
+              alt="Coordination"
+            />
             <div class="ligneMission">
               <i class="fa-solid fa-user-tie"></i>
 
@@ -108,7 +107,7 @@
       </section>
 
       <!-- Nos Support numerique -->
-      <section class="numerique">
+      <section class="numerique" id="SUPPORT">
         <h2>Nos supports numériques</h2>
         <h5>
           Grâce à des capteurs et une application, les locataires signalent les
@@ -140,7 +139,7 @@
       </section>
 
       <!-- Benefice -->
-      <section id="benefice">
+      <section id="INTERET" class="benefice">
         <h2>Nos Bénéfices</h2>
         <section class="sectionCard">
           <div class="card">
@@ -201,11 +200,11 @@
       </section>
 
       <!-- Temoignage -->
-      <section class="haut-page">
+      <section class="haut-page" id="AVIS">
         <h2>Avis Clients</h2>
         <h4>95% des utilisateurs recommandent l’application</h4>
       </section>
-      <section class="card">
+      <section class="avis">
         <div class="card1">
           <div class="texte">
             <h3>Mairie du 2ème</h3>
@@ -213,7 +212,7 @@
             <p>★ ★ ★ ★ ★</p>
           </div>
         </div>
-        <div class="card2">
+        <div class="card1">
           <div class="texte">
             <h3>Mairie du 6ème</h3>
             <h4>“Facile d’utilisation, je suis satisfait ! “</h4>
@@ -256,7 +255,7 @@
 
     <!-- Footer -->
     <footer>
-      <section>
+      <section class="foot">
         <h3>Contact</h3>
         <div class="reseaux">
           <!-- X -->
@@ -273,7 +272,7 @@
         </div>
       </section>
 
-      <section>
+      <section class="foot">
         <h3>Mentions Légales</h3>
         <div>
           <p>Nom : Humitrack</p>
@@ -286,13 +285,14 @@
         </div>
       </section>
 
-      <section>
+      <section class="foot">
         <h3>Equipe de Production</h3>
         <div>
           <p>Directeur de projet : Ilyas HAMDAOUI</p>
           <p>Directeur artistique : Dawen RAHALI & Terry OSAMEDE</p>
           <p>Rédactrice en chef: Zineb ENNASSIH</p>
           <p>Chef de communication : Evan BELROSE</p>
+          <p>Developpeur : Ilyas HAMDAOUI & Zineb ENNASSIH</p>
         </div>
       </section>
     </footer>
