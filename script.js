@@ -1,18 +1,17 @@
-// const toggleButton = document.querySelector("toggleButton");
 
-// toggleButton.addEventListener("click", function () {
-//   if (cercle.style.display == "none") {
-//     cercle.style.display == "block";
-//     toggleButton.textContent =
-//       'Première Fonctionnalité <span class="texture">-</span>';
-//   } else {
-//     cercle.style.display == "none";
-//     toggleButton.textContent = "Première Fonctionnalité +";
-//   }
-// });
 
-$("toggleFonction").ready(function () {
-  $("#toggleButton").on("click", function (e) {
-    $("#cercle").toggle();
-  });
+
+
+// Récupérer les éléments
+const clickableText = document.getElementById("clickableText");
+const hiddenText = document.getElementById("hiddenText");
+
+// Ajouter un écouteur d'événement pour le clic
+clickableText.addEventListener("click", function () {
+  // Basculer l'affichage du texte caché
+  if (hiddenText.style.display === "none" || hiddenText.style.display === "") {
+    hiddenText.style.display = "block";
+  } else {
+    hiddenText.style.display = "none";
+  }
 });

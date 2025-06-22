@@ -18,7 +18,7 @@ h5 {
 }
 h2 {
   justify-self: center;
-  font-size: 60px;
+  font-size: 50px;
   width: 80%;
 }
 
@@ -27,7 +27,7 @@ h2 {
   h1 {
     justify-self: center;
     padding: 70px;
-    color: #336666;
+    color: #036666;
     font-size: 60px;
   }
   h2 {
@@ -148,7 +148,7 @@ h2 {
     font-size: 40px;
     background: transparent;
     border: transparent;
-    color: #336666;
+    color: #036666;
     padding: 20px;
   }
 }
@@ -188,4 +188,37 @@ h2 {
     font-size: 50px;
     margin: 50px;
   }
+}
+.reseaux {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  gap: 20px;
+  i {
+    color: var(--texte-color);
+  }
+}
+footer {
+  margin-top: 30px;
+  background-color: #98d9e0;
+  display: flex;
+  justify-content: center;
+  color: var(--texte-color);
+  gap: 70px;
+}
+.foot {
+  h3 {
+    margin-top: 15px;
+  }
+  div {
+    margin-top: 15px;
+    p {
+      line-height: 30px;
+    }
+  }
+}
+
+
+span{
+    color: #036666;
 }

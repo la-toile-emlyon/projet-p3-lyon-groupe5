@@ -68,13 +68,11 @@ html {
 }
 
 body {
-  background-image: url(photo/unsplash_dEATKItQazc.png);
+  background-image: url(photo/back.png);
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: bottom;
-  /* background-position-y: center; */
-  /* background-position-y: top; */
 }
 
 * {
