@@ -8,11 +8,10 @@ html {
 :root {
   --color-texte: #036666;
 
-  --H1-size-texte: 70px;
-  --H2-size-texte: 35px;
-  --H3-size-texte: 18px;
-  --H4-size-texte: 16px;
-  --H5-size-texte: 20px;
+  --H1-size-texte: 68px;
+  --H2-size-texte: 45px;
+  --H3-size-texte: 28px;
+  --H4-size-texte: 22px;
 
   --border-radius: 10px;
 
@@ -26,6 +25,9 @@ html {
 
 body {
   font-family: "Nunito", sans-serif; /* s'applique sur tout les textes par héritage */
+  
+  /* Partenaire */
+  text-align: center;
 }
 
 * {
@@ -40,9 +42,13 @@ html {
 h1 {
   font-size: var(--H1-size-texte);
   line-height: 1.1;
+  margin-bottom: 8px;
+  text-wrap-style: balance;
+
 }
 h2 {
   font-size: var(--H2-size-texte);
+  margin-bottom: 16px;
 }
 h3 {
   font-size: var(--H3-size-texte);
@@ -50,24 +56,46 @@ h3 {
 h4 {
   font-size: var(--H4-size-texte);
 }
+
+section{
+  padding-block: 64px;
+}
 .container {
-  max-width: 1080px;
+  max-width: 1200px;
   margin: auto;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .button{
+  margin-top: 32px;
 }
 .button {
   width: fit-content;
   color: white;
   background-color: #036666;
-  padding: 14px 34px;
+  padding: 12px 32px;
   border: #036666 solid 1.5px;
   border-radius: 50px;
+
 }
 .button.secondary {
   background-color: transparent;
   color: #036666;
 }
-
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 48px;
+  .card {
+    width: 20%;
+    min-width: 280px;
+  }
+}
 /* nav */
 #logo {
   width: 170px;
@@ -76,20 +104,22 @@ h4 {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #98d9e0;
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  ul {
+  z-index: 10;
+  box-shadow: 0 4px 15px #0000001c;
+  height: 80px;
+  color: #036666;
+  ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
     gap: 20px;
-    color: #036666;
     margin-right: 20px;
-    a {
+    a{
       list-style-type: none;
       text-decoration: none;
       color: #036666;
@@ -103,11 +133,11 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: top;
-  height: 80vh;
+  min-height: 80vh;
   display: grid;
   place-items: center;
+  padding-block: 80px;
   .container {
-    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,175 +146,76 @@ nav {
 
 /* mission */
 #mission {
-  .card-wrapper {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    .card {
-      width: 30%;
-      aspect-ratio: 1;
-      position: relative;
-      overflow: hidden;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-      h3 {
-        position: absolute;
-        bottom: 0px;
-        background: linear-gradient(#00000000, #192422);
-      }
-      span,
-      h3 {
-        color: white;
-      }
-      span{
-        position: absolute;
-        font-size: 107px;
-        transform: translate(-28%, -32%);
-        text-shadow: 0 4px 16px #0000002b;
-        color: #ffffffa6;
-        font-family: monospace;
-      }
+  .card-wrapper{
+    .card{
+    aspect-ratio: 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 43px;
+    span,
+    h3 {
+      color: white;
+    }
+    span {
+      position: absolute;
+      font-size: 110px;
+      top: 0;
+      left: 0;
+      transform: translate(-1rem, -1.5rem);
+      text-shadow: 0 4px 16px #00000015;
+      color: #ffffffa6;
+      font-family: monospace;
+    }
     }
   }
-}
-/* Partenaire */
-.partenaire {
-  display: flex;
-  flex-direction: row;
-  scrollbar-width: 80%;
-  animation-duration: 100ms;
-}
-
-.logoPartenaire {
-  background-color: #f6ffff;
-  border-radius: 10px;
-  /* background-size: cover; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  flex-wrap: wrap;
-
   img {
-    background-size: cover;
-    height: 110px;
-    /* box-shadow: 1px 1px 1px 1px #98d9e0; */
-    border-radius: 10px;
-    /* width: 10%; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
   }
-}
-/* MISSION */
-
-.objetMission {
-  display: block;
-  /* flex-direction: column; */
-  row-gap: 50px;
-  width: 100%;
-  div {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    margin: 100px;
-    justify-content: space-around;
-    font-size: 32px;
-    img {
-      width: 25%;
-    }
+  h3 {
+    position: absolute;
+    bottom: 0px;
+    background: linear-gradient(#00000000, #19242296);
+    padding: 19px;
+    width: 100%;
+    font-size: 15px;
   }
 }
 
-/* .objetMission:nth-child(2) {
-  div{
-
-    flex-direction: row-reverse;
-  }
-} */
-
-.ligneMission {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  align-items: center;
-}
 
 /* support numérique */
-.numerique {
-  h5 {
-    text-align: center;
-  }
-}
+
 .support {
-  margin-top: 20px;
   display: flex;
   justify-content: center;
   gap: 60px;
-
   .card {
     width: 40%;
-    h3 {
-      text-align: center;
-    }
     img {
       width: 100%;
       height: auto;
     }
   }
 }
+/* bénéfices */
 
-.benefice {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
-}
-.sectionCard {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-/* .card {
-  img {
-    align-self: center;
-    width: 90%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 10px;
+#benefice {
+  .card{
+    .img-container{
+      display: grid;
+      place-items: center;
+      width: 280px;
+      aspect-ratio: 1;;
+      img{
+        width: 100%;
+      }
+    }
   }
-  h3 {
-    font-size: var(--H3-size-texte);
-    color: #036666;
-    text-align: left;
-    padding: 10px;
-  }
-  h2 {
-    justify-self: anchor-center;
-  }
-
-  p {
-    font-size: 14px;
-    font-family: "Nunito", sans-serif;
-    text-align: left;
-    padding: 10px;
-  }
-  svg {
-    align-self: center;
-  }
-} */
-
-.sectionCard {
-  gap: 23px;
 }
 
-h2 {
-  align-self: anchor-center;
-  margin: 40px;
-  text-align: center;
-}
-/* avis */
+/* footer */
 
 footer {
   margin-top: 30px;
@@ -292,13 +223,16 @@ footer {
   display: flex;
   justify-content: center;
   gap: 70px;
+  padding-block: 30px;
 }
 .foot {
   h3 {
     margin-top: 15px;
+    text-align: start;
   }
   div {
     margin-top: 15px;
+    text-align: start;
     p {
       line-height: 30px;
     }
@@ -314,56 +248,36 @@ footer {
   }
 }
 
-.haut-page {
+/* .haut-page {
   h4 {
-    text-align: center;
     color: #036666;
     font-family: "Nunito", sans-serif;
     font-size: 16px;
     font-style: italic;
     margin: 30px;
   }
-}
-.avis {
+} */
+
+/* Partenaire */
+
+.logoPartenaire {
+  /* background-size: cover; */
   display: flex;
   justify-content: center;
-  gap: 20px;
-  .card1 {
-    display: flex;
-    justify-content: center;
-    background-color: #f6ffff;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-      rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    padding: 25px;
-    border-radius: 10px;
-    text-align: center;
-    width: 38%;
-    font-family: "Nunito", sans-serif;
-    p {
-      font-size: 35px;
-      color: #036666;
-      font-family: "Nunito", sans-serif;
-    }
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
 
-    h4 {
-      color: #001b1b;
-      font-size: 16px;
-      font-style: italic;
-      margin: 10px;
-      font-size: 16px;
-      font-weight: 200;
-      font-family: "Nunito", sans-serif;
-    }
-  }
-  .texte {
-    text-align: center;
+  img {
+    background-size: cover;
+    height: 110px;
+    /* box-shadow: 1px 1px 1px 1px #98d9e0; */
+    border-radius: 10px;
+    /* width: 10%; */
   }
 }
-
 .bas-page {
-  text-align: center;
   h3 {
-    text-align: center;
     color: #036666;
     font-family: "Nunito", sans-serif;
     font-style: italic;

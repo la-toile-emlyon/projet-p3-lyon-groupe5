@@ -32,11 +32,10 @@
         />
 
         <ul>
-          <li><a href="#ACCUEIL">Accueil</a></li>
-          <li><a href="#MISSION">Mission</a></li>
-          <li><a href="#SUPPORT">Support</a></li>
-          <li><a href="#INTERET">Interet</a></li>
-          <li><a href="#AVIS">Avis</a></li>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#support">Support</a></li>
+          <li><a href="#benefice">Interet</a></li>
           <li><a class="button secondary" href="/doc.html">Documentation</a></li>
         </ul>
       </nav>
@@ -51,12 +50,12 @@
             Un projet pour équiper votre commune pour améliorer la qualité de
             vie de vos citoyens.
           </p>
-          <a class="button" href="">Faire un devis</a>
+          <a class="button" href="">Prendre contact</a>
         </div>
       </section>
 
       <!-- Notre Mission -->
-      <section class="missionLP" id="mission">
+      <section id="mission">
         <div class="container">
           <h2>Notre <span>Mission</span></h2>
           <p>
@@ -88,14 +87,14 @@
       </section>
 
       <!-- Nos Support numerique -->
-      <section class="numerique" id="SUPPORT">
+      <section class="numerique" id="support">
         <div class="container">
           <h2>Nos supports numériques</h2>
-          <h3>
+          <p>
             Grâce à des capteurs et une application, les locataires signalent les
             problèmes comme la moisissure et la mairie récupère les données et
             intervient auprès du bailleur qui ne réagit pas.
-          </h3>
+          </p>
           <div class="support">
             <div class="card">
               <img src="photo/coteCitoyen.png" alt="citoyens" />
@@ -118,34 +117,40 @@
               </p>
             </div>
           </div>
+          <a class="button secondary" href="">En savoir plus</a>
+        
         </div>
       </section>
 
       <!-- Benefice -->
-      <section id="INTERET" class="benefice">
+      <section id="benefice">
         <div class="container">
-          <h2>Nos Bénéfices</h2>
-          <div class="sectionCard">
+          <h2>Pour votre <span>Bénéfices</span></h2>
+          <div class="card-wrapper">
             <div class="card">
-              <img src="photo/amelioration.svg" alt="">
+              <div class="img-container">
+                <img src="photo/amelioration.svg" alt="">
+              </div>
               <h3>Amélioration de l’image et de l’attractivité de la ville</h3>
-              <p>
-                Ce type de projet montre que la mairie se soucie activement du
-                bien-être de ses citoyens et de la qualité de vie dans la commune.
-              </p>
+              <p>Ce type de projet montre que la mairie se soucie activement du
+                bien-être de ses citoyens et de la qualité de vie dans la commune.</p>
             </div>
 
             <div class="card">
-              <img src="photo/reduction.svg" alt="">
+              <div class="img-container">
+                <img src="photo/reduction.svg" alt="">
+              </div>
               <h3>Réduction des coûts à long terme</h3>
               <p>
                 La maintenance préventive et la détection précoce des problèmes
                 éviteraient des réparation majeures et onéreuses à l’avenir.
               </p>
             </div>
-
+            
             <div class="card">
-              <img src="photo/medecin.svg" alt="">
+              <div class="img-container">
+                <img src="photo/medecin.svg" alt="">
+              </div>
               <h3>Amélioration de la santé publique et des conditions de vie</h3>
               <p>
                 En détectant les taux d’humidité excessifs, la mairie peut
@@ -156,7 +161,9 @@
             </div>
 
             <div class="card">
-              <img src="photo/info.svg" alt="">
+              <div class="img-container">
+                <img src="photo/info.svg" alt="">
+              </div>
               <h3>Collecte de données pour des politiques publiques ciblées</h3>
               <p>
                 Les données pourraient également servir de base pour des campagnes
@@ -168,33 +175,10 @@
         </div>
       </section>
 
-      <!-- Temoignage -->
-      <!-- <section class="haut-page" id="AVIS">
-        <h2>Avis Clients</h2>
-        <h4>95% des utilisateurs recommandent l’application</h4>
-      </section>
-      <section class="avis">
-        <div class="card1">
-          <div class="texte">
-            <h3>Mairie du 2ème</h3>
-            <h4>“Je recommande ce logiciel à toute les mairies du Rhône “</h4>
-          </div>
-        </div>
-        <div class="card1">
-          <div class="texte">
-            <h3>Mairie du 6ème</h3>
-            <h4>“Facile d’utilisation, je suis satisfait ! “</h4>
-          </div>
-        </div>
-      </section>
-      <section class="bas-page">
-        <h3>Et vous, qu’avez-vous pensé de votre expérience ?</h3>
-        <a class="button" href=''>Laissez votre avis</a>
-      </section>
-    </main> -->
+
 
     <!-- Partenaire -->
-    <section class="partenaires">
+    <section id="partenaire">
       <div class="container">
         <h2>Nos partenaires</h2>
         <div class="logoPartenaire">
@@ -221,10 +205,27 @@
         </div>
       </div>
     </section>
+<!-- formulaire -->
+<!-- <form action="">
+  <label for="">villes</label>
+  <i></i>
+  <label for=""></label>
+  <i></i>
+  <label for=""></label>
+  <i></i>
+  <label for=""></label>
+<i></i>
+<button></button>
+
+<form> -->
+
+
+
+
 
     <!-- Footer -->
     <footer>
-      <section class="foot">
+      <div class="foot">
         <h3>Contact</h3>
         <div class="reseaux">
           <!-- X -->
@@ -239,22 +240,22 @@
           <!-- linkedin -->
           <i class="fa-brands fa-linkedin"></i>
         </div>
-      </section>
+      </div>
 
-      <section class="foot">
+      <div class="foot">
         <h3>Mentions Légales</h3>
         <div>
           <p>Nom : Humitrack</p>
           <p>Adresse : EM-Lyon</p>
           <p>RCS : 1234567777777890</p>
-          <p>Mail : Umitrack@gmail.com</p>
+          <p>Mail : Humitrack@gmail.com</p>
           <p>Tel : 07 38 90 56 43</p>
           <p>Numéro de TVA : 60334324543464525</p>
           <p>Hébergeur : OVHcloud</p>
         </div>
-      </section>
+      </div>
 
-      <section class="foot">
+      <div class="foot">
         <h3>Equipe de Production</h3>
         <div>
           <p>Directeur de projet : Ilyas HAMDAOUI</p>
@@ -263,7 +264,7 @@
           <p>Chef de communication : Evan BELROSE</p>
           <p>Developpeur : Ilyas HAMDAOUI & Zineb ENNASSIH</p>
         </div>
-      </section>
+      </div>
     </footer>
   </body>
 </html>
