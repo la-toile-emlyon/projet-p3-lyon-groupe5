@@ -6,6 +6,17 @@
     <title>Projet - Documentation</title>
     <link rel="stylesheet" href="style.css" />
     <link href="doc.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -32,11 +43,11 @@
           Ce projet propose une solution innovante pour lutter contre l'humidité
           dans les logements.
         </h2>
-        <p>
+        <h6>
           Un service numérique connecté à des capteurs, permettant aux mairies
           de détecter rapidement les risques liés à l'humidité au sein des
           logements de leurs communes.
-        </p>
+        </h6>
       </section>
 
       <section class="service">
@@ -168,7 +179,7 @@
             </button>
             <div class="content">
               <p>
-                Dès qu'une anomalie est constatée, le citoyen peut déposer une
+                Dès qu'une anomalie est constatée, le locataire peut déposer une
                 plainte rapidement via l'application en remplissant un
                 formulaire simple, puis l'envoyer.
               </p>
@@ -184,7 +195,7 @@
             </button>
             <div class="content">
               <p>
-                Le citoyen peut relancer une plainte en ouvrant l'application,
+                Le locataire peut relancer une plainte en ouvrant l'application,
                 sélectionnant le litige dans l'onglet "Historique", puis en
                 ajoutant une note avant d'envoyer la relance, qui est ensuite
                 confirmée.
@@ -201,7 +212,7 @@
             </button>
             <div class="content">
               <p>
-                Le citoyen peut accéder à des conseils pratiques en ouvrant
+                Le locataire peut accéder à des conseils pratiques en ouvrant
                 l'application, en cliquant sur l'onglet "Conseil" pour choisir
                 et lire les informations utiles.
               </p>
@@ -255,25 +266,8 @@
         </div>
       </section>
     </footer>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const toggleButtons = document.querySelectorAll(".toggleButton");
+    <script src="script.js"></script>
 
-        toggleButtons.forEach((button) => {
-          button.addEventListener("click", function () {
-            const content = this.nextElementSibling;
-
-            this.classList.toggle("active");
-
-            if (content.style.display === "flex") {
-              content.style.display = "none";
-            } else {
-              content.style.display = "flex";
-            }
-
-          });
-        });
-      });
-    </script>
+   
   </body>
 </html>
