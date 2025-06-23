@@ -2,6 +2,7 @@ html {
   height: 100%;
   width: 100%;
   background-color: #f6ffff;
+  color:#001b1b;
 }
 
 * {
@@ -20,14 +21,6 @@ html {
   --p: 16px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-p {
-  font-family: "Nunito", sans-serif;
-}
 h1{
     font-size: var(--H1);
 }
@@ -36,9 +29,19 @@ h2 {
   font-size: var(--h2);
   width: 80%;
 }
+h4{
+  font-size: var(--H4h4);
+}
+h6{
+  font-size: var(--H6);
+}
+p{
+  font-size: var(--p);
+}
+
 
 .heroBanner {
-  margin-top: 58px;
+  margin-top: 54px;
   h1 {
     justify-self: center;
     padding: 70px;

@@ -2,90 +2,70 @@ html {
   height: 100%;
   width: 100%;
   background-color: #f6ffff;
+  color: #001b1b;
 }
 
 :root {
-  /* P1 Accueil */
-
-  /* general */
-  --color-backgroundcolor: #f6ffff;
   --color-texte: #036666;
 
-  /* size texte */
   --H1-size-texte: 70px;
   --H2-size-texte: 35px;
   --H3-size-texte: 18px;
   --H4-size-texte: 16px;
   --H5-size-texte: 20px;
 
-  /* border radius */
   --border-radius: 10px;
 
-  /* navbar */
-  --color-backgroundcolor-navbar: #98d9e0;
-  --color-texte-navbar: #f6ffff;
-
-  /* button navbar*/
   --button-navbar-backgroundcolor: transparent;
   --button-navbar-border-color: 1px solid #f6ffff;
   --button-navbar-color-texte: #f6ffff;
   --button-navbar-radius: 25px;
   --button-navbar-padding-inline: 24px;
   --button-navbar-padding-block: 12px;
-  --button-navbar-size: 16px;
-
-  /* button */
-  --button-backgroundcolor: #036666;
-  --button-color: #f6ffff;
-  --button-radus: 25px;
-  --button-padding-inline: 24px;
-  --button-padding-block: 12px;
-  --button-size: 24px;
-
-  /* P2 Section Solution */
-  /* img */
-  --solution-img-width: 500px;
-  --solution-img-height: 500px;
-  --solution-img-radius: 20px;
-
-  /* texte */
-  --texte-taille: 32px;
-  --texte-color: #001b1b;
-
-  /* P3 Section Benefice */
-  /* img */
-  --benefice-img-width: 250px;
-  --benefice-img-height: 125px;
-  --benefice-img-radius: 10px;
-
-  /* P4 Retour Client */
-  /* card */
-  --retourClient-card-width: 750px;
-  --retourClient-card-height: 380px;
-  --retourClient-card-radius: 20px;
-  --retourClient-card-profil-dimention: 140px;
-  --retourClient-card-profil-radius: 25%;
 }
 
 body {
-  background-image: url(photo/back.png);
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: bottom;
+  font-family: "Nunito", sans-serif; /* s'applique sur tout les textes par héritage */
 }
 
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Nunito", sans-serif;
+html {
+  font-size: 18px;
+}
+h1 {
+  font-size: var(--H1-size-texte);
+  line-height: 1.1;
+}
+h2 {
+  font-size: var(--H2-size-texte);
+}
+h3 {
+  font-size: var(--H3-size-texte);
+}
+h4 {
+  font-size: var(--H4-size-texte);
+}
+.container {
+  max-width: 1080px;
+  margin: auto;
+  width: 100%;
+}
+.button {
+  width: fit-content;
+  color: white;
+  background-color: #036666;
+  padding: 14px 34px;
+  border: #036666 solid 1.5px;
+  border-radius: 50px;
+}
+.button.secondary {
+  background-color: transparent;
+  color: #036666;
 }
 
 /* nav */
@@ -115,54 +95,61 @@ nav {
       color: #036666;
     }
   }
-  button {
-    color: var(--button-navbar-color-texte);
-    background-color: var(--button-navbar-backgroundcolor);
-    font-size: var(--button-navbar-size);
-    padding-inline: var(--button-navbar-padding-inline);
-    padding-block: var(--button-navbar-padding-block);
-    border: var(--button-navbar-border-color);
-    border-radius: var(--button-navbar-radius);
-  }
 }
 
 /* Accueil */
-
-.accueilLP {
-  margin-top: 59px;
-  width: 95%;
-  display: flex;
-  flex-direction: column;
-  margin-inline-start: 40px;
-  h1 {
-    width: 70%;
-    margin-top: 50px;
-    font-size: var(--H1-size-texte);
-  }
-  p {
-    padding-block: 30px;
-    width: 50%;
-    font-size: var(--H5-size-texte);
-  }
-  button {
-    width: 30%;
-
-    background: var(--button-backgroundcolor);
-    color: var(--button-color);
-    border-radius: var(--button-radus);
-    padding-inline: var(--button-padding-inline);
-    padding-block: var(--button-padding-block);
-    /* font-size: var(--button-size); */
+#accueil {
+  background-image: url(photo/back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: top;
+  height: 80vh;
+  display: grid;
+  place-items: center;
+  .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-.texte {
-  width: 60%;
-  display: flex;
-  row-gap: 10px;
-  flex-direction: column;
+/* mission */
+#mission {
+  .card-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    .card {
+      width: 30%;
+      aspect-ratio: 1;
+      position: relative;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      h3 {
+        position: absolute;
+        bottom: 0px;
+        background: linear-gradient(#00000000, #192422);
+      }
+      span,
+      h3 {
+        color: white;
+      }
+      span{
+        position: absolute;
+        font-size: 107px;
+        transform: translate(-28%, -32%);
+        text-shadow: 0 4px 16px #0000002b;
+        color: #ffffffa6;
+        font-family: monospace;
+      }
+    }
+  }
 }
-
 /* Partenaire */
 .partenaire {
   display: flex;
@@ -215,14 +202,6 @@ nav {
     flex-direction: row-reverse;
   }
 } */
-.mission {
-  margin-top: 90px;
-  h5 {
-    justify-self: center;
-    width: 80%;
-    text-align: start;
-  }
-}
 
 .ligneMission {
   display: flex;
@@ -267,22 +246,11 @@ nav {
   flex-wrap: wrap;
   justify-content: center;
 }
-.card {
-  border: 0 solid;
-  box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.114);
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-  font-size: 12px;
-  gap: 12px;
-  /* border-radius: 20px; */
-  text-align: center;
-
+/* .card {
   img {
     align-self: center;
-    width: 100%;
-    height: 190px;
+    width: 90%;
+    height: 180px;
     object-fit: cover;
     border-radius: 10px;
   }
@@ -302,7 +270,10 @@ nav {
     text-align: left;
     padding: 10px;
   }
-}
+  svg {
+    align-self: center;
+  }
+} */
 
 .sectionCard {
   gap: 23px;
@@ -315,25 +286,11 @@ h2 {
 }
 /* avis */
 
-.bas-page {
-  button {
-    width: 30%;
-
-    background: var(--button-backgroundcolor);
-    color: var(--button-color);
-    border-radius: var(--button-radus);
-    padding-inline: var(--button-padding-inline);
-    padding-block: var(--button-padding-block);
-    /* font-size: var(--button-size); */
-  }
-}
-
 footer {
   margin-top: 30px;
   background-color: #98d9e0;
   display: flex;
   justify-content: center;
-  color: var(--texte-color);
   gap: 70px;
 }
 .foot {
@@ -412,19 +369,5 @@ footer {
     font-style: italic;
     font-weight: 900;
     margin: 40px;
-  }
-  button {
-    background-color: #036666;
-    color: white;
-    font-weight: bold;
-    font-style: italic;
-    padding: 10px 20px;
-    height: 40px;
-    border-radius: 30px;
-    font-family: "Nunito", sans-serif;
-    border: none;
-    margin: 20px;
-    cursor: pointer;
-    box-shadow: 0 0 10px rgb(4 105 105 / 70%);
   }
 }
