@@ -138,10 +138,13 @@ p{
 }
 
 .presentationFonct {
-  display: flex;
-  flex-direction: row;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+
   img {
-    width: 30%;
+    margin-bottom: 20px;
+    width: 85%;
   }
 }
 .fonct {
@@ -238,4 +241,13 @@ footer {
 
 span {
   color: #036666;
+}
+
+
+.fonctionClasse{
+  display: flex;
+  justify-content: center;
+  img{
+    width: 30%;
+  }
 }
