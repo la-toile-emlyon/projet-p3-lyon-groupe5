@@ -454,7 +454,18 @@ footer {
     /* padding: 10px; */
     color: var(--texte-color);
   }
+  a{
+    color:#001c1c
+  }
 }
+
+  a:hover{
+    color: #f6ffff;
+  }
+  i:hover{
+    color: #f6ffff;
+  }
+
 
 .plan{
   text-decoration: none;
