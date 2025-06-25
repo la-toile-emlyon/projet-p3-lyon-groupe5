@@ -31,19 +31,28 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
     rel="stylesheet" />
 </head>
+<body>
+<header>
+      <nav>
 
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li>
-            <a class="button secondary" href="/doc.html">Documentation</a>
+        <ul class="right">
+          <li><a href="index.html">
+            <img id="logo" src="photo/Capture_d_écran_2025-06-17_161436-removebg-preview.png" alt="logo"/></a>
           </li>
+          <!-- <li><a href="index.html">Accueil</a></li> -->
+          <li><a href="index.html#mission">Mission</a></li>
+          <li><a href="index.html#support">Support</a></li>
+          <li><a href="index.html#benefice">Bénéfice</a></li>
+        </ul>
+        <ul class="left">
+          <li><a class="button secondary" href="doc.html">Documentation</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <!-- c bon  -->
       <!-- herobanner -->
-      <section id="accueil">
+      <section id="accueil" >
         <div class="container"> 
         <h1>Documentation </h1>
         <h2>
@@ -154,49 +163,22 @@
             </div>
             <img src="photo/UserFlowCitoyen.jpg" alt="" srcset="" />
           </div>
-        </section>
 
-        <section class="toggleFonction">
-          <button class="toggleButton">
-            Deuxième fonctionnalité <span class="texture">+</span>
-          </button>
-          <div class="content">
-            <p>
-              Le locataire peut relancer un litige en ouvrant l'application,
-              sélectionnant le litige dans l'onglet "Historique", puis en
-              ajoutant une note avant d'envoyer la relance, qui est ensuite
-              confirmée.
-            </p>
-            <h4>Userflow</h4>
-            <img src="photo/Userflow2.png" alt="Userflow" />
-
-            <img src="photo/fonction2.png" alt="fonct2" />
-          </div>
-        </section>
-
-        <section class="toggleFonction">
-          <button class="toggleButton">
-            Troisième fonctionnalité <span class="texture">+</span>
-          </button>
-          <div class="content">
-            <p>
-              Le locataire peut accéder à des conseils pratiques en ouvrant
-              l'application, en cliquant sur l'onglet "Conseil" pour choisir
-              et lire les informations qui peuvent être utiles.
-            </p>
-            <h4>Userflow</h4>
-            <img src="photo/Userflow3.png" alt="Userflow" />
-
-            <img src="photo/function3.png" alt="fonct2" />
+          <div class="cardService">
+            <div class="containerService">
+              <h3>Les mairies </h3>
+              <p>
+               Les mairies peinent à inciter les bailleurs à régler les problèmes d’hygiène, en partie à cause du manque de données sur l’insalubrité des logements. La visibilité réduite sur le degré réel d’insalubrité, la présence de bailleurs problématiques souvent identifiés mais peu sanctionnés, les coûts élevés des réparations et le manque de personnel compliquent encore davantage les interventions
+              </p>
+            </div>
+            <img src="photo/UserFlowMairie.jpg" alt="" srcset="" />
           </div>
         </div>
         </div>
-
       </section>
-
-
       <!-- section fonction -->
       <section class="fonction">
+        <div class="container">
         <h2>Comment <span>fonctionne</span> notre <span>application</span></h2>
         <div class="presentationFonct">
          
@@ -216,7 +198,7 @@
           <img src="photo/parcoursUtilisateurCitoyen.png" alt="">
 
         </div>
-
+          </div>
         <div>
           <div class="toggleFonction">
             <button class="toggleButton">
@@ -268,7 +250,7 @@
             </div>
           </div>
           <section>
-       <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/ExLVDvjaePK5UjKv25oYST/wireframe-application?page-id=86%3A194&node-id=87-1126&p=f&viewport=-130%2C158%2C0.06&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=87%3A1126&embed-host=share" allowfullscreen></iframe>
+       <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/ExLVDvjaePK5UjKv25oYST/wireframe-application?page-id=86%3A194&node-id=87-1126&p=f&viewport=-2813%2C-508%2C0.46&scaling=scale-down&content-scaling=fixed&starting-point-node-id=87%3A1126&embed-host=share" allowfullscreen></iframe>
       </section>
         </div>
       </section>
@@ -276,14 +258,20 @@
 
         <section class="service">
         <div class="serviceGlobale">
-          <div class="cardService">
-            <div class="containerService">
-              <h3>Pour les Mairies </h3>
-              <p>
-              Le site offre une interface pour la gestion des litiges d'habitat. L'agent peut visualiser tous les logements signalés sur une carte interactive pour identifier les zones à problèmes. Il accède également à un tableau des litiges par bailleur pour suivre leur performance et les plaintes associées. Chaque litige peut être consulté en détail (description, photos, état d'avancement) et l'agent dispose des outils pour contacter les bailleurs ou solliciter un service juridique si nécessaire, permettant une intervention efficaces. </p>
-            </div>
-            <img src="photo/iconMairie.png" alt="" srcset="" />
-          </div>
+         
+<div class="cardService">
+  <div class="containerService">
+    <h3>Pour les Mairies </h3>
+    <p>
+      Le site offre une interface pour la gestion des litiges d'habitat. L'agent peut visualiser tous les logements
+      signalés sur une carte interactive pour identifier les zones à problèmes. Il accède également à un tableau des
+      litiges par bailleur pour suivre leur performance et les plaintes associées. Chaque litige peut être consulté en
+      détail (description, photos, état d'avancement) et l'agent dispose des outils pour contacter les bailleurs ou
+      solliciter un service juridique si nécessaire, permettant une intervention efficaces. </p>
+  </div>
+  <img src="photo/iconMairie.png" alt="" srcset="" />
+</div>
+          
 
                   </div>
          </section>
@@ -349,11 +337,14 @@
       </section>
 
     <section>
-      <h2>Conclusion</h2>
+      <div class="container">
+ <h2> Avenir </h2>
       <p>
         HumiTrack prévoit d’étendre son service à de nouvelles villes et régions. L’équipe souhaite renforcer la collaboration avec les collectivités pour mieux protéger les habitants.
-        On a pensé aussi a des fonctionnalités qu'on pouvaient rajoutés: programmer des interventions des professionnels.
+        On a pensé aussi a des fonctionnalités qu'on pouvaient rajoutés: programmer des interventions des professionnels, Aviser ARS (Agence Régional de santé).
       </p>
+      </div>
+     
 
     </section>
 
@@ -397,7 +388,7 @@
         <h3>Equipe de Production</h3>
         <div>
           <p>Directeur de projet : Ilyas HAMDAOUI</p>
-          <p>Directeur artistique : Dawen RAHALI & Terry OSAMEDE</p>
+          <p>Directeur artistique : Dawen RAHALI & Terry Osamede SAMUEL</p>
           <p>Rédactrice en chef: Zineb ENNASSIH</p>
           <p>Chef de communication : Evan BELROSE</p>
           <p>Developpeur : Ilyas HAMDAOUI & Zineb ENNASSIH</p>
