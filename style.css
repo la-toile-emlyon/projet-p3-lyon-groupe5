@@ -80,14 +80,14 @@ section .button {
   border-radius: 50px;
 }
 .button.secondary {
-  background-color:#DDF1F7;
+  background-color: #ddf1f7;
   color: #036666;
   border: none;
   font-weight: 600;
 }
-.button.secondary:hover{
-  color:#036666;
-  background-color: #f6FFFF;
+.button.secondary:hover {
+  color: #036666;
+  background-color: #f6ffff;
   border: none;
   font-weight: 600;
 }
@@ -120,8 +120,8 @@ nav {
   color: #036666af;
   /* glass effect */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   ul {
     display: flex;
     justify-content: space-between;
@@ -227,49 +227,6 @@ backdrop-filter: blur(5px);
     }
   }
 }
-
-/* footer */
-
-footer {
-  margin-top: 30px;
-  background-color: #98d9e0;
-  display: flex;
-  justify-content: center;
-  gap: 70px;
-  padding-block: 30px;
-}
-.foot {
-  h3 {
-    margin-top: 15px;
-    text-align: start;
-  }
-  div {
-    margin-top: 15px;
-    text-align: start;
-    p {
-      line-height: 30px;
-    }
-  }
-}
-.reseaux {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-  gap: 20px;
-  i {
-    color: var(--texte-color);
-  }
-}
-
-/* .haut-page {
-  h4 {
-    color: #036666;
-    font-family: "Nunito", sans-serif;
-    font-size: 16px;
-    font-style: italic;
-    margin: 30px;
-  }
-} */
 
 /* Partenaire */
 
@@ -451,15 +408,60 @@ footer {
     width: 40%;
   }
 }
-.use{
+.use {
   display: flex;
   flex-direction: row;
   align-items: center;
-    justify-content: space-around;
-
+  justify-content: space-around;
 }
 
 /* autre */
 span {
   color: #036666;
+}
+
+/* footer */
+
+footer {
+  margin-top: 30px;
+  background-color: #98d9e0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding-block: 30px;
+}
+.foot {
+  h3 {
+    margin-top: 15px;
+    text-align: start;
+  }
+  div {
+    margin-top: 15px;
+    text-align: start;
+    p {
+      font-size: 15px;
+      line-height: 30px;
+    }
+  }
+
+}
+.reseaux {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  gap: 20px;
+  i {
+    /* padding: 10px; */
+    color: var(--texte-color);
+  }
+}
+
+.plan{
+  text-decoration: none;
+  list-style: none;
+  a {
+    font-size: 15px;
+    /* font-weight: 500; */
+    color: #001b1b;
+  }
 }
