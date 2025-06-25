@@ -10,7 +10,7 @@ html {
   margin: 0;
 }
 
-:root {
+/* :root {
   --color-primaire: #036666;
   --backgroundcolor: #f6ffff;
   --H1: 60px;
@@ -19,9 +19,9 @@ html {
   --H4: 14px;
   --h6: 20px;
   --p: 16px;
-}
+} */
 
-h1{
+/* h1{
     font-size: var(--H1);
 }
 h2 {
@@ -37,10 +37,10 @@ h6{
 }
 p{
   font-size: var(--p);
-}
+} */
 
 
-.heroBanner {
+/* .heroBanner {
   h1 {
     justify-self: center;
     padding: 70px;
@@ -59,7 +59,7 @@ p{
     width: 80%;
     text-align: start;
   }
-}
+} */
 
 /* P service */
 
