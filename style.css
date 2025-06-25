@@ -282,3 +282,174 @@ footer {
     margin: 40px;
   }
 }
+
+
+
+
+
+
+
+
+
+/* documentation */
+/* context */
+#arrangementContext {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.containerContext {
+  display: flex;
+  flex-flow: row wrap;
+  width: 50%;
+  margin: 40px;
+  align-content: center;
+  justify-content: center;
+  row-gap: 12px;
+  text-align: start;
+}
+
+.cardContext {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  width: 40%;
+  margin: 10px;
+  h4 {
+    align-self: center;
+    font-size: smaller;
+    padding: 10px;
+    text-align: center;
+  }
+  p {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+
+/* service */
+.serviceGlobale {
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+
+.cardService {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-block: 20px;
+
+  img {
+    width: 50%;
+  }
+}
+
+.containerService {
+  width: 50%;
+  text-align: start;
+  justify-items: start;
+  align-content: center;
+}
+
+
+/* fonction */
+
+.fonct {
+  margin: 40px;
+  width: 50%;
+  align-content: end;
+  text-align: start;
+  h3 {
+    padding-block: 12px;
+  }
+}
+.fonction {
+  display: flex;
+  flex-direction: column;
+}
+
+.presentationFonct {
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  img {
+    margin-bottom: 20px;
+    width: 85%;
+  }
+}
+
+.toggleFonction {
+  display: flex;
+  flex-direction: column;
+  padding-block: 30px;
+  border-block: 1px solid black;
+  margin: 1px;
+  width: 100%;
+  align-self: center;
+  align-items: center;
+  
+  button {
+    font-size: 40px;
+    background: transparent;
+    border: transparent;
+    color: #036666;
+    padding: 40px;
+  }
+}
+.texture {
+  font-size: 30px;
+}
+.toggleButton .texture {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+}
+.toggleButton.active .texture {
+  transform: rotate(45deg);
+}
+.toggleButton {
+  background: none;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    width: 60%;
+    place-self: center;
+  }
+  img {
+    width: 80%;
+  }
+  h4 {
+    font-size: 50px;
+    margin: 50px;
+  }
+}
+
+.fonctionClasse{
+  display: flex;
+  justify-content: center;
+  img{
+    width: 30%;
+  }
+}
+
+
+
+
+/* autre */
+span {
+  color: #036666;
+}
