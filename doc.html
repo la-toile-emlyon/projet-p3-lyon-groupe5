@@ -71,7 +71,7 @@
 <!-- cbon  -->
 <!-- context -->
 
-      <section class="container">
+      <section class="container"  id="context">
         <h2>Un <span>contexte social</span> tendu dans le bassin Lyonnais</h2>
         <div  id="arrangementContext">
           <div class="containerContext">
@@ -145,7 +145,7 @@
 
 
       <!-- section service -->
-      <section class="service">
+      <section class="service" id="service">
         <div class="container">
           
         <h2>Nos services</h2>
@@ -178,28 +178,28 @@
       </section>
 
       <!-- section fonction citoyen -->
-      <section class="fonction">
+      <section class="fonction" id="fonction">
         <div class="container">
-        <h2>Comment <span>fonctionne</span> notre <span>application</span></h2>
-        <div class="presentationFonct">
-         
+          <h2>Comment <span>fonctionne</span> notre <span>application</span></h2>
+          <div class="presentationFonct">
+            
           <div class="fonctionClasse">
-            <div class="fonct">
-              <h3>Pour les citoyens</h3>
-              <p>
-                Les locataires peuvent facilement déposer un litige (moisissure,
-                humidité) via un formulaire simple avec photos. L'application
-                confirme l'envoi et alerte les parties. Le locataire peut
-                consulter l'historique et l'état de ses demandes, accéder à des
-                conseils pratiques pour gérer l'humidité, et faire des relances si nécessaire.
-              </p>
-            </div>
-            <img src="photo/bonhomme_salut.png" alt="" />
+              <div class="fonct">
+                <h3>Pour les citoyens locataires</h3>
+                <p>
+                  Les locataires peuvent facilement déposer un litige (moisissure,
+                  humidité) via un formulaire simple avec photos. L'application
+                  confirme l'envoi et alerte les parties. Le locataire peut
+                  consulter l'historique et l'état de ses demandes, accéder à des
+                  conseils pratiques pour gérer l'humidité, et faire des relances si nécessaire.
+               </p>
+              </div>
+              <img src="photo/bonhomme_salut.png" alt="" />
           </div>
-          <img src="photo/parcoursUtilisateurCitoyen.png" alt="">
+           <img src="photo/parcoursUtilisateurCitoyen.png" alt="">
 
         </div>
-          </div>
+        </div>
 
         <div>
           <div class="toggleFonction">
@@ -212,8 +212,10 @@
                 litige rapidement via l'application en remplissant un formulaire simple, puis l'envoyer à la mairie.
               </p>
               <h4>Userflow</h4>
-              <img src="photo/userflow1_mairie.png" alt="Userflow" />
-              <img src="photo/fonction1.png" alt="fonct1" />
+              <div class="use">
+                <img src="photo/userflow1_mairie.png" alt="Userflow" />
+                <img src="photo/fonction1.png" alt="fonct1" />
+              </div>
             </div>
           </div>
 
@@ -229,9 +231,10 @@
                 confirmée.
               </p>
               <h4>Userflow</h4>
-              <img src="photo/userflow2_mairie.png" alt="Userflow" />
-
-              <img src="photo/fonction2.png" alt="fonct2" />
+              <div class="use">
+                <img src="photo/userflow2_mairie.png" alt="Userflow" />
+                <img src="photo/fonction2.png" alt="fonct2" />
+              </div>
             </div>
           </div>
 
@@ -246,10 +249,12 @@
                 et lire les informations qui peuvent être utiles.
               </p>
               <h4>Userflow</h4>
-              <img src="photo/Userflow3.png" alt="Userflow" />
+              <div class="use">
 
-              <img src="photo/function3.png" alt="fonct2" />
-            </div>
+                <img src="photo/Userflow3.png" alt="Userflow" />
+                <img src="photo/function3.png" alt="fonct2" />
+              </div>
+              </div>
           </div>
           <section>
        <iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/ExLVDvjaePK5UjKv25oYST/wireframe-application?page-id=86%3A194&node-id=87-1126&p=f&viewport=-2813%2C-508%2C0.46&scaling=scale-down&content-scaling=fixed&starting-point-node-id=87%3A1126&embed-host=share" allowfullscreen></iframe>
@@ -260,10 +265,9 @@
 <!-- section fonction mairie -->
         <section class="fonction">
            <div class="container">
-         <h2>Comment fonctionne notre site</h2>
-          <div class="presentationFonct">
-            <div class="fonctionClasse">
-             <div class="fonct">
+            <div class="presentationFonct">
+              <div class="fonctionClasse">
+               <div class="fonct">
                 <h3>Pour les Mairies </h3>
                <p>
                 Le site offre une interface pour la gestion des litiges d'habitat. L'agent peut visualiser tous les logements
@@ -273,8 +277,6 @@
                 solliciter un service juridique si nécessaire, permettant une intervention efficaces. 
                </p>
              </div>
-            
-
              <img src="photo/image-removebg-preview 1.png" alt="" />
             </div>
             <img src="photo/parcoursUtilisateurmairie.png" alt="">
@@ -293,8 +295,10 @@
                 L’agent de mairie peut visualiser les logements signalés sur une carte interactive et lancer une recherche par type d’insalubrité ou nom de bailleur. Les résultats sont regroupés par bailleur.
               </p>
               <h4>Userflow</h4>
-              <img src="photo/userflow1_mairie.png" alt="Userflow" />
-              <img src="photo/carte_interactive.png" alt="fonct1" />
+              <div class="use">
+                <img src="photo/userflow1_mairie.png" alt="Userflow" />
+                <img src="photo/carte_interactive.png" alt="fonct1" />
+              </div>
             </div>
           </div>
 
@@ -307,9 +311,10 @@
                 L’agent de mairie consulte l'ensemble des plaintes avec profil du bailleur, puis choisit de contacter ce dernier ou le service juridique. Les coordonnées s’affichent pour faciliter le contact.
               </p>
               <h4>Userflow</h4>
-              <img src="photo/userflow2_mairie.png" alt="Userflow" />
-
-              <img src="photo/liste_bailleur.png" alt="fonct2" />
+              <div class="use">
+                <img src="photo/userflow2_mairie.png" alt="Userflow" />
+                <img src="photo/liste_bailleur.png" alt="fonct2" />
+              </div>
             </div>
           </div>
 
@@ -322,9 +327,10 @@
                 L’agent de mairie consulte les plaintes avec profil du bailleur, puis peut rédiger un message et envoyer le dossier complet au service juridique.
               </p>
               <h4>Userflow</h4>
-              <img src="photo/userflow3_mairie.png" alt="Userflow" />
-
-              <img src="photo/service_juridique.png" alt="fonct2" />
+<div class="use">
+  <img src="photo/userflow3_mairie.png" alt="Userflow" />
+  <img src="photo/service_juridique.png" alt="fonct2" />
+</div>
             </div>
           </div>
           <div class="toggleFonction">
@@ -336,10 +342,10 @@
                 L’agent de mairie accède à la liste des litiges, choisit un litige visualise son état d’avancement avec le profil du bailleur. Il peut ensuite contacter le bailleur directement.
               </p>
               <h4>Userflow</h4>
-              
-               <img src="photo/userflow4_mairie.png" alt="Userflow" />
-
-              <img src="photo/recap.png" alt="fonct2" />
+              <div class="use">
+                <img src="photo/userflow4_mairie.png" alt="Userflow" />
+                <img src="photo/recap.png" alt="fonct2" />
+              </div>
             
 
             </div>
@@ -352,19 +358,15 @@
         </section>
       </section>
 
-    <section>
+    <section id="avenir">
       <div class="container">
- <h2> Avenir </h2>
+ <h2>Avenir</h2>
       <p>
         HumiTrack prévoit d’étendre son service à de nouvelles villes et régions. L’équipe souhaite renforcer la collaboration avec les collectivités pour mieux protéger les habitants.
         On a pensé aussi a des fonctionnalités qu'on pouvaient rajoutés: programmer des interventions des professionnels, Aviser ARS (Agence Régional de santé).
       </p>
       </div>
-     
-
     </section>
-
-
     </main>
 
 
@@ -385,6 +387,18 @@
           <!-- linkedin -->
           <i class="fa-brands fa-linkedin"></i>
         </div>
+      </div>
+      <div class="foot">
+        <h3>Plan du site</h3>
+       <div>
+        <ul>
+          <li><a href="#accueil">Présentation</a></li>
+          <li><a href="#context">Contexte</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#fonction">Fonctionnalités</a></li>
+          <li><a href="#avenir">Avenir</a></li>
+        </ul>
+       </div>
       </div>
 
       <div class="foot">

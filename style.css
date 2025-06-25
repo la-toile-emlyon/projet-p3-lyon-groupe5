@@ -400,11 +400,11 @@ footer {
   align-items: center;
 
   button {
-    font-size: 40px;
+    font-size: 30px;
     background: transparent;
     border: transparent;
     color: #036666;
-    padding: 40px;
+    padding: 20px;
   }
 }
 .texture {
@@ -437,11 +437,11 @@ footer {
     place-self: center;
   }
   img {
-    width: 80%;
+    width: 35%;
   }
   h4 {
-    font-size: 50px;
-    margin: 50px;
+    font-size: 30px;
+    margin: 30px;
   }
 }
 
@@ -450,6 +450,13 @@ footer {
   img {
     width: 40%;
   }
+}
+.use{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+    justify-content: space-around;
+
 }
 
 /* autre */
