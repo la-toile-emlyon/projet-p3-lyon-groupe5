@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -7,10 +7,262 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="index.css" rel="stylesheet" type="text/css" />
     <script src="script.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+       <link rel="icon" type="image/png" href="favicon.png" />
   </head>
 
   <body>
-    Accueil
-    <a href="/doc.html">Documentation</a>
+   <header>
+      <nav>
+
+        <ul class="right">
+          <li><a href="index.html">
+            <img id="logo" src="photo/Capture_d_écran_2025-06-17_161436-removebg-preview.png" alt="logo"/></a>
+          </li>
+          <!-- <li><a href="index.html">Accueil</a></li> -->
+          <li><a href="index.html#mission">Mission</a></li>
+          <li><a href="index.html#support">Support</a></li>
+          <li><a href="index.html#benefice">Bénéfice</a></li>
+        </ul>
+        <ul class="left">
+          <li><a class="button secondary" href="doc.html">Documentation</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Accueil -->
+      <section id="accueil">
+        <div class="container">
+          <h1>Mesurez l’humidité, agissez contre l’insalubrité</h1>
+          <p>
+            Un projet pour équiper votre commune pour améliorer la qualité de
+            vie de vos citoyens.
+          </p>
+          <a class="button" href="">Prendre contact</a>
+        </div>
+      </section>
+
+      <!-- Notre Mission -->
+      <section id="mission">
+        <div class="container">
+          <h2>Notre <span>Mission</span></h2>
+          <p>
+            Nous installons des capteurs dans les logements pour mesurer
+            l’humidité, la qualité de l’air et la température, et calculer un
+            risque sanitaire. Les locataires peuvent signaler des problèmes via
+            notre app, alertant la mairie et le bailleur. La mairie veille à ce
+            que les bailleurs agissent vite pour protéger la santé des
+            habitants.
+          </p>
+          <div class="card-wrapper">
+            <div class="card">
+              <img src="photo/Déploiement.png" alt="déploiement" />
+              <h3>Déploiement des capteurs</h3>
+              <span>01</span>
+            </div>
+            <div class="card">
+              <img src="photo/Reception.png" alt="Réception" />
+              <h3>Récepetion des alertes</h3>
+              <span>02</span>
+            </div>
+            <div class="card">
+              <img src="photo/CoordinationMairieBailleur.png" alt="Coordination"/>
+              <h3>Coordination avec la mairie et le bailleur</h3>
+              <span>03 </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Nos Support numerique -->
+      <section class="numerique" id="support">
+        <div class="container">
+          <h2>Un <span>service</span> mais deux <span>usages</span></h2>
+
+          <p>
+            Grâce à des capteurs et une application, les locataires signalent les
+            problèmes comme la moisissure et la mairie récupère les données et
+            intervient auprès du bailleur qui ne réagit pas.
+          </p>
+          <div class="support">
+            <div class="card">
+              <img src="photo/coteCitoyen.png" alt="citoyens" />
+              <h3>Coté Citoyens</h3>
+              <p>
+                En cas de graves traces de moisissure, ainsi le calcul de taux
+                d’humidité élevé le locataire peut la signaler en quelques clics
+                via l’application. Le bailleur est immédiatement alerté et tenu
+                d’intervenir.
+              </p>
+            </div>
+
+            <div class="card">
+              <img src="photo/coteMairie.png" alt="mairie" />
+              <h3>Coté Mairie</h3>
+              <p>
+                La mairie reçoit en temps réel les signalements et les données des
+                capteurs. Elle suit l’état d’avancement des signalements reçus, et
+                identifie les situations à risques.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefice -->
+      <section id="benefice">
+        <div class="container">
+          <h2>Pour votre <span>Bénéfices</span></h2>
+          <div class="card-wrapper">
+            <div class="card">
+              <div class="img-container">
+                <img src="photo/amelioration.svg" alt="">
+              </div>
+              <h3>Amélioration de l’image et de l’attractivité de la ville</h3>
+              <p>Ce type de projet montre que la mairie se soucie activement du
+                bien-être de ses citoyens et de la qualité de vie dans la commune.</p>
+            </div>
+
+            <div class="card">
+              <div class="img-container">
+                <img src="photo/reduction.svg" alt="">
+              </div>
+              <h3>Réduction des coûts à long terme</h3>
+              <p>
+                La maintenance préventive et la détection précoce des problèmes
+                éviteraient des réparation majeures et onéreuses à l’avenir.
+              </p>
+            </div>
+            
+            <div class="card">
+              <div class="img-container">
+                <img src="photo/medecin.svg" alt="">
+              </div>
+              <h3>Amélioration de la santé publique et des conditions de vie</h3>
+              <p>
+                En détectant les taux d’humidité excessifs, la mairie peut
+                anticiper et prévenir l’apparition de moisissures, d’acarien et de
+                champignon qui sont des facteur aggravant pour les gens ayant des
+                problèmes respiratoires.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="img-container">
+                <img src="photo/info.svg" alt="">
+              </div>
+              <h3>Collecte de données pour des politiques publiques ciblées</h3>
+              <p>
+                Les données pourraient également servir de base pour des campagnes
+                de sensibilisation des habitants sur les gestes simples à adopter
+                pour réguler l’humidité dans les logement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+    <!-- Partenaire -->
+    <section id="partenaire">
+      <div class="container">
+        <h2>Nos partenaires</h2>
+        <div class="logoPartenaire">
+          <img src="photo/logoEDF-removebg-preview.png" alt="EDF" />
+          <img src="photo/logoENgie-removebg-preview.png" alt="Engie" />
+          
+          <img
+          src="photo/logoLERoyMerlin-removebg-preview.png"
+          alt="Le Roy Merlin"
+          />
+          <img
+          src="photo/logo_Bouygues_Construction.webp"
+          alt="Bouygues Construction"
+          />
+          <img
+            src="photo/logo-callisto-toiture-800px.png"
+            alt="Callisto Toiture"
+          />
+          <img
+          src="photo/logo-maison-sur-quadri-e1513164311200-removebg-preview.png"
+          alt="Maison Sur"
+          />
+          <img src="photo/logoReyAsseche.png" alt="Rey Assechement" />
+          <img src="photo/logohumipro-removebg-preview (1).png" alt="HumiPro" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+   <footer>
+      
+      <div class="foot">
+        <h3>Plan du site</h3>
+       <div>
+        <h5>Landing Page</h5>
+          <ul class="plan">
+           <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#mission">Mission</a></li>
+            <li><a href="index.html#support">Support</a></li>
+            <li><a href="index.html#benefice">Bénéfice</a></li>
+          </ul>
+        <h5>Documentation</h5>
+          <ul class="plan">
+            <li><a href="doc.html#accueil">Présentation</a></li>
+            <li><a href="doc.html#context">Contexte</a></li>
+            <li><a href="doc.html#service">Services</a></li>
+            <li><a href="doc.html#fonction">Fonctionnalités</a></li>
+            <li><a href="doc.html#avenir">Avenir</a></li>
+          </ul>
+       </div>
+      </div>
+
+      <div class="foot">
+        <h3>Mentions Légales</h3>
+        <div>
+          <p>Nom : Humitrack</p>
+          <p>Adresse : EM-Lyon</p>
+          <p>RCS : 1234567777777890</p>
+          <p>Mail : Humitrack@gmail.com</p>
+          <p>Tel : 07 38 90 56 43</p>
+          <p>Numéro de TVA : 60334324543464525</p>
+          <p>Hébergeur : OVHcloud</p>
+        </div>
+      </div>
+
+      <div class="foot">
+        <h3>Equipe de Production</h3>
+        <div>
+          <p>Directeur de projet : Ilyas HAMDAOUI</p>
+          <p>Directeur artistique : Dawen RAHALI & Terry Osamede SAMUEL</p>
+          <p>Rédactrice en chef: Zineb ENNASSIH</p>
+          <p>Chef de communication : Evan BELROSE</p>
+          <p>Developpeur : Ilyas HAMDAOUI & Zineb ENNASSIH</p>
+        </div>
+      </div>
+      <div class="foot">
+        <h3>Contact</h3>
+        <div class="reseaux">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <a href="https://www.linkedin.com/in/muhammad-ilyas-hamdaoui/"> <i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
